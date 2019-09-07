@@ -1,0 +1,24 @@
+name: "Vialbot"
+output_dir: "."
+navbar:
+  title: "Vialbot"
+  left:
+    - text: "Fotos"
+      href:  fotos.html
+    - text: "Videos"
+      href:  videos.html
+    - text: "Acerca de"
+      href:  acerca_de.html
+    - text: "Normas"
+      href:  normas.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: contact.html
+    - icon: fa-github fa-lg
+      href: http://github.com/Angie713
+    - icon: fa-youtube fa-lg
+      href: https://www.youtube.com/channel/UCZzzBplfjF0gfXIbmUKxIUg
+output:
+  html_document:
+    theme: paper
+    css: 'styles.css'

@@ -1,0 +1,27 @@
+---
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+## Conductas Inseguras 
+```{r echo=FALSE,results='asis'}
+source( file = "FuncionesAuxiliares.R" )
+
+varias_imagenes=""
+lista_imagenes=list.files("images/Gatos/", full.names=T)
+lista_imagenes=lista_imagenes
+
+
+for(nombre_imagen in lista_imagenes)
+{
+  imagen=CrearUnaImagen(nombre_imagen, "20vh")
+  varias_imagenes=paste(varias_imagenes, imagen)
+}  
+
+div=CrearContenedor(1, varias_imagenes)
+cat(div)
+```

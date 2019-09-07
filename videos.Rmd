@@ -1,0 +1,50 @@
+---
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+## [Videos conductas seguras y ejemplares](videos_conductas_seguras.html)
+
+Aquí se muestran videos de conductas seguras y ejemplares.
+Definimos las conductas seguras como conductas que están dentro de las normativas que no ponen en peligro a los demás usuarios de las vías ni a si mismos y conductas ejemplares como conductas que no sólo están dentro de las normativas sino que además ayudan a hacer de la convivencia algo mejor y más seguro.
+
+```{r echo=FALSE,results='asis'}
+source( file = "FuncionesAuxiliares.R" )
+
+varias_imagenes=""
+lista_imagenes=list.files("images/Gatos/", full.names=T)
+lista_imagenes=lista_imagenes[1:10]
+
+for(nombre_imagen in lista_imagenes)
+{
+  imagen=CrearUnaImagen(nombre_imagen, "20vh")
+  varias_imagenes=paste(varias_imagenes, imagen)
+}  
+
+div=CrearContenedor(1, varias_imagenes)
+cat(div)
+```
+## [Videos conductas inseguras](videos_conductas_inseguras.html)
+
+Aquí se muestran videos de conductas inseguras.
+Definimos as conductas inseguras como conductas que están fuera de las normativas y que ponen en peligro a toda la comunidad de usuarios viales en cualquier grado, ya sea a ellos mismos o a otras personas.
+
+```{r echo=FALSE,results='asis'}
+source( file = "FuncionesAuxiliares.R" )
+
+varias_imagenes=""
+lista_imagenes=list.files("images/Gatos/", full.names=T)
+lista_imagenes=sample(lista_imagenes,10)
+
+for(nombre_imagen in lista_imagenes)
+{
+  imagen=CrearUnaImagen(nombre_imagen, "20vh")
+  varias_imagenes=paste(varias_imagenes, imagen)
+}  
+
+div=CrearContenedor(1, varias_imagenes)
+cat(div)

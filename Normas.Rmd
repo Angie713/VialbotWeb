@@ -1,0 +1,22 @@
+---
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+## [Normas](normas.html)
+
+aqui se muestran las normas.
+
+## [Sección 1](sección 1.html)
+
+[normas 1](https://www.colombia.com/actualidad/codigos-leyes/codigo-de-transito/Tit1Cp1-principios.aspx)
+[normas 2](https://www.movilidadbogota.gov.co/web/node/1893)
+
+
+## [Sección 2](sección 2.html)
+
+## [Sección 3](sección 3.html)

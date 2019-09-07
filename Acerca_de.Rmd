@@ -1,0 +1,15 @@
+---
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+## Acerca de este proyecto
+
+- El chatbot da información acerca de las normativas de la seguridad vial y en un futuro llegará a responder preguntas.
+- Se le pueden enviar fotos o videos las cuales son enviadas a una página web que realizamos, en la cual se encuentran fotos o videos sobre conductas seguras o inseguras.
+- El chatbot se comunica por medio de la plataforma Telegram para interactuar con las personas de forma más natural, sus instrucciones fueron programadas con el lenguaje de programación R que es sencillo y potente. 
+- Y por último tambien realizamos esta página web en la cual se encuentran fotos o videos sobre conductas seguras o inseguras. Al chatbot se le pueden enviar imagenes o videos los cuales el chatbot los envía a la página web.

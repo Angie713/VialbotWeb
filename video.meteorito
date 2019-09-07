@@ -1,0 +1,3 @@
+<div style = "float: left; width:__HEIGHT__; overflow:hidden; margin: 10px">
+  <video src = "__VIDEO__" style = "height:__HEIGHT__;object-fit: cover;">
+</div>
